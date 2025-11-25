@@ -13,7 +13,7 @@ pygame.display.set_caption("Ralph's BrickGame")
 
 PLAYER_WIDTH, PLAYER_HEIGHT = 50, 50
 PROJECTILE_WIDTH, PROJECTILE_HEIGHT = 15, 40
-PLAYER_SPEED = 10
+PLAYER_SPEED = 15
 STAR_WIDTH = 10
 STAR_HEIGHT = 14
 STAR_VEL = 9
@@ -44,7 +44,7 @@ def elapsed(elapsed_time):
     WIN.blit(time_text, (10, 10))
 
 def draw_player(player, stars):
-    pygame.draw.rect(WIN, (0, 0, 100), player, border_radius=50)
+    pygame.draw.rect(WIN, (225, 225, 225), player, border_radius=50)
     for star in stars:
         pygame.draw.rect(WIN, "white", star)
 
