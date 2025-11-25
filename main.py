@@ -21,7 +21,7 @@ STAR_VEL = 9
 FONT = pygame.font.SysFont("comicsans", 30)
 
 
-BG = Image.open("./tools/thanos.gif")
+BG = Image.open("./tools/spaaaace.gif")
 bg_frames = []
 for frame in ImageSequence.Iterator(BG):
     frame = frame.convert("RGBA")
